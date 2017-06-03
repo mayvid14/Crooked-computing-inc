@@ -1,0 +1,64 @@
+<div class="grey darken-4" ng-controller="wwu"><br>
+<br>
+<br>
+    <div class="container">
+        <div class="row white">
+           <img src="../resources/cci-fi.jpg" class="responsive-img col s6 offset-s3" alt="">
+            <h3 class="center col s12">WORK WITH US</h3>
+            <form class="col s12" ng-submit='formsubmit(form.$valid)' name="form" novalidate>
+                <div class="row">
+                    <div class="input-field col s6 offset-s3">
+                        <input id="job_title" name="job_title" type="text" class="validate" ng-model="job" required>
+                        <label for="job_title">Custom Job Title</label> <span ng-show="form.job_title.$invalid && form.job_title.$dirty" style="color:red">Invalid Job Title</span> <span ng-show="form.job_title.$pristine" style="color:red">Job Title Required</span> </div>
+                    <div class="input-field col s4">
+                        <input id="first_name" type="text" class="validate" ng-model="fn" required name="fn" ng-minlength='3'>
+                        <label for="first_name">First Name</label> <span ng-show="form.fn.$invalid && form.fn.$dirty" style="color:red">Invalid First Name</span> <span ng-show="form.fn.$pristine" style="color:red">First Name Required</span> </div>
+                    <div class="input-field col s4">
+                        <input id="middle_name" type="text" class="validate" ng-model="mn">
+                        <label for="middle_name">Middle Name</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <input id="last_name" type="text" class="validate" ng-model="ln">
+                        <label for="last_name">Last Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6 offset-s3">
+                        <input id="email" type="email" class="validate" ng-model="em" required name="em">
+                        <label for="email">E-mail</label> <span ng-show="form.em.$invalid && form.em.$dirty" style="color:red">Invalid Email</span> <span ng-show="form.em.$pristine" style="color:red">Email Required</span> </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6 offset-s3">
+                        <input id="website" type="text" ng-model="ws">
+                        <label for="website">Website</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6 offset-s3">
+                        <textarea id="address" class="materialize-textarea" ng-model="add"></textarea>
+                        <label for="address">Address</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6 offset-s3">
+                        <input id="mob" type="number" class="validate" ng-model="mob" required ng-minlength='10' ng-maxlength='10' name="mob">
+                        <label for="mob">Mobile No.</label> <span ng-show="form.mob.$invalid && form.mob.$dirty" style="color:red">Invalid Mobile no.</span> <span ng-show="form.mob.$pristine" style="color:red">Mobile no. Required</span> </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6 offset-s3">
+                        <textarea id="good_at" class="materialize-textarea" ng-model="ga" required name="ga"></textarea>
+                        <label for="good_at">What are you good at?</label> <span ng-show="form.ga.$invalid && form.ga.$dirty" style="color:red">Invalid Entry</span> <span ng-show="form.ga.$pristine" style="color:red">Required for evaluation</span> </div>
+                </div>
+                <div class="row">
+                    <div class="file-field input-field  col s6 offset-s3">
+                        <div class="btn"> <span>Curriculum Vitae</span>
+                            <input type="file"> </div>
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text" ng-model="cv" required  name="file"> </div> <span ng-show="form.file.$pristine" style="color:red">A file is required</span> </div>
+                </div>
+                <div class="row">
+                    <input type="submit" class="btn btn-large col s4 offset-s4" value="Submit" ng-disabled="form.$pristine || form.$invalid"> </div>
+            </form>
+        </div>
+    </div>
+</div>

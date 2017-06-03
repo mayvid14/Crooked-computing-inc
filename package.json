@@ -18,6 +18,7 @@
   "homepage": "https://github.com/mayvid14/crooked-computing-inc#readme",
   "dependencies": {
     "angular": "^1.6.4",
+    "angular-re-captcha": "^0.2.0",
     "angular-route": "^1.6.4",
     "body-parser": "^1.17.2",
     "express": "^4.15.3",

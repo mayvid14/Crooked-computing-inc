@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Crooked Computing Inc.</title>
+    <!--CSS files-->
+    <link rel="stylesheet" href="/nm/materialize-css/dist/css/materialize.css">
+    <link rel="stylesheet" href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+    <link rel="stylesheet" href="../styles/index.css">
+    <!--JS files-->
+    <script src="/nm/jquery/dist/jquery.min.js"></script>
+    <script src="/nm/angular/angular.min.js"></script>
+    <script src="/nm/angular-route/angular-route.min.js"></script>
+    <!--<script src="/nm/angular-re-captcha/angular-re-captcha.js"></script>-->
+    <script src="/nm/materialize-css/dist/js/materialize.js"></script>
+    <!--<script src='https://www.google.com/recaptcha/api.js'></script>-->
+    <!--Config files-->
+    <script src="../configs/main.js"></script>
+    <script src="../configs/routes.js"></script>
+    <!--<script src="../configs/captcha.js"></script>-->
+    <script src="../controllers/workwithus.js"></script>
+</head>
+
+<body ng-app="cci" class="">
+    <!--<ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">one</a></li>
+        <li><a href="#!">two</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">three</a></li>
+    </ul>--> <br><br>
+    <nav class="grey darken-4">
+        <div class="nav-wrapper grey darken-4">
+            <div class="row"> <a href="/" class="brand-logo center"><img src="../resources/cci-fi.jpg" alt="" class="responsive-img" id="head"></a> </div>
+            <div class="row"> <a href="/" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="hide-on-med-and-down ">
+                    <li><a href="#!content">Content</a></li>
+                    <li><a href="#!theteam">The Team</a></li>
+                    <li><a href="#!workwithus">Work with Us</a></li>
+                </ul>
+                <ul id="mobile-menu" class="side-nav">
+                    <li><a href="#!content">Content</a></li>
+                    <li><a href="#!theteam">The Team</a></li>
+                    <li><a href="#!workwithus">Work with Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <ng-view></ng-view>
+</body>
+<script>
+    $(document).ready(function () {
+        $(".dropdown-button").dropdown();
+        $(".button-collapse").sideNav();
+    });
+</script>
+
+</html>
