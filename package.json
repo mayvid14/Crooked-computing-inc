@@ -21,7 +21,7 @@
     "angular-re-captcha": "^0.2.0",
     "angular-route": "^1.8.0",
     "body-parser": "^1.20.1",
-    "express": "^4.19.2",
+    "express": "^4.20.0",
     "jquery": "^3.5.1",
     "materialize-css": "^1.0.0",
     "mongoose": "^5.13.20"
