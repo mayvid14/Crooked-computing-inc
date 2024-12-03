@@ -24,6 +24,6 @@
     "express": "^4.21.1",
     "jquery": "^3.5.1",
     "materialize-css": "^1.0.0",
-    "mongoose": "^5.13.20"
+    "mongoose": "^8.8.3"
   }
 }
